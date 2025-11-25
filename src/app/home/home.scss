@@ -212,41 +212,7 @@ footer{
         font-size: 32px;
     }
 }
-/* Extra small devices (phones) */
-@media (max-width: 575px) {
-    header{
-        .whats{
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            a{margin: 5px!important;}
-        }
-    }
-    .top{
-        .parent{
-        .content{
-            .title{
-                .span{
-                    bottom: 65px;
-                    left: 65px;
-                }
-            }
-        }
-    }}
-.our-service{.services{
-     grid-template-columns: repeat(2, 1fr); /* 3 أعمدة في الصف الأول */
-    grid-template-rows: auto auto;  
-}}
- .help{.content{
-        flex-direction: column;
-        img{min-width: 100%;}
-    }}
-.end{ 
-    .content{flex-direction: column;
-        p{font-size: 36px;}
-        img{
-            max-width: 100%;}}}
-}
+
 
 /* Small devices (tablet) */
 /* Medium devices (tablet landscape) */
@@ -286,14 +252,69 @@ footer{
             padding: 0;
         }}}
 }
+/* Extra small devices (phones) */
+@media (max-width: 575px) {
+    .m-5{margin: 1rem!important;}
+    .p-5{padding: 1rem!important;}
+    p{font-size: 20px;line-height: 30px;text-align: center;}
+    .h1,h1{
+    font-size: 48px!important;
+}
+    header{
+        .logo{width: 100%;}
+        .whats{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            a{margin: 5px!important;}
+        }
+    }
+    .top{
+        .parent{
+            .car{top: 40%;}
+            .stars{top: 30%;}
+        .content{
+            width: 100%;
+            right: auto;
+            .title{
+                .span{
+                    bottom: 50px;
+                    left: 35px;
+                }
+            }
+        }
+    }}
+    .overview{
+        .content{width: 100%;
+        }
+    }
+    .help{.content{img{margin: 0;}}}
+    .our-service{.services{
+     grid-template-columns: repeat(2, 1fr); /* 3 أعمدة في الصف الأول */
+    grid-template-rows: auto auto;  
+    }}
+    .last-works{.content{ img {
+        max-width: 75%;
+        padding-bottom: 1rem;
+    }}}
+    .help{.content{
+            flex-direction: column;
+            img{min-width: 100%;}
+        }}
+    .end{ 
+         p{font-size: 36px!important;}
+        .content{flex-direction: column;
+            p{font-size: 24px!important;}
+            img{
+                max-width:75%;
+            }}}
 
-/* Large devices (laptop) */
-@media (min-width: 992px) and (max-width: 1199px) {
+    footer{
+        .whats{
+            a{display: block;}
+        }
 
+    }
 
 }
 
-/* Extra large devices (large desktop) */
-@media (min-width: 1200px) {
-
-}
